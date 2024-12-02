@@ -1,13 +1,13 @@
 --// Configurações Gerais
-getgenv().Prediction = 0.129
+getgenv().Prediction = 0.0
 getgenv().AimPart = "HumanoidRootPart"
 getgenv().Key = "c"
 getgenv().DisableKey = "p"
 getgenv().AutoPrediction = true
 
 getgenv().FOV = true
-getgenv().ShowFOV = false
-getgenv().FOVSize = 55
+getgenv().ShowFOV = true
+getgenv().FOVSize = 30
 
 --// Serviços
 local Players = game:GetService("Players")
@@ -36,7 +36,7 @@ fovCircle.NumSides = 1000
 --// Função de Notificação
 local function Notify(message)
     StarterGui:SetCore("SendNotification", {
-        Title = "Evan's Camlock",
+        Title = "Victor's Camlock",
         Text = message,
         Duration = 5
     })
